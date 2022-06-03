@@ -1,38 +1,184 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- HTML declaration -->
+<!-- netlify link: https://dnb-shecodes-portfolio.netlify.app/ -->
+<!-- Per https://www.w3.org/International/tutorials/language-decl/ its good practice to set language to en upfront -->
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SheCodes_Portfolio</title>
+  <!-- link to favicon -->
+  <link href="./images/dnb.jpg" rel="icon">
+  <title>DNB's SheCodes_Portfolio</title>
   <!-- bootstrap imported for styling -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <!-- font awesome import for icons -->
+  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
+  <!-- google font playfair and poppins -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+    rel="stylesheet" />
   <!-- custom stylesheet -->
   <link rel="stylesheet" href="styles.css">
-  <!-- font awesome import for icons -->
-  <!-- google font playfair and poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link crossorigin="anonymous"
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:ital,wght@1,500;1,700&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
-  <div class="d-flex">
-    She Codes tests
-    <h1>test</h1>
-    <h2>test2</h2>
+  <div class="container">
+    <nav class="d-flex justify-content-space-around">
+      <a href="/" title="Homepage">
+        <img src="images/dnb.jpg" class="logo d-none d-md-block" alt="DNB Image" />
+      </a>
+      <ul>
+        <li class="active">
+          <a href="/" title="Homepage"> Home</a>
+        </li>
+        <li>
+          <a href="/about.html" title="About DNB"> About</a>
+        </li>
+        <li>
+          <a href="https://drive.google.com/file/d/1rCUTInBCdmKW4taKf8EH55aDuitJ0pGT/view" title="Resume DNB">
+            Resume</a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/users/dionne-noella-barretto/badges"
+            title="DNB Certifications">Certifications</a>
+        </li>
+        <li>
+          <a href="#contact" title="Contact DNB"> Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+  <div class="hero">
+    <p>👋 Hello, I'm</p>
+    <h1>DNB</h1>
+    <h2 class="mb-5">Aspiring Full Stack Web Developer , currently employed as a Senior Solutions Consultant (TAM) at
+      ‘Google'!
+    </h2>
+    <div>
+      <a href="https://getcloud.withgoogle.com/schedule/dionnenoella?ln=en" class="btn btn-branding"
+        title="Contact me">Contact me</a>
+    </div>
+  </div>
+  <p class="text-center m-5">
+    Check out some of my featured projects below
+
+  </p>
+  <div class="container projects">
+    <div class="row mb-5">
+      <div class="col d-none d-lg-block">
+        <img src="./images/GameInstructions.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col">
+        <div class="project-description">
+          <h3 class="mb-5"> </h3>
+          <p class="mb-5 text-muted">Practicing JS and 3js to build a SquidGame inspired red light/green light game that
+            allows a player to stealthily sneak past the prying eyes of a watchful Doll!
+          </p>
+          <a href="https://dionnenoellabarretto.github.io/SquidGame_3js/" class="btn btn-branding-outline">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col d-none d-lg-block">
+        <img src="./images/CandyCrush.png" class="img-fluid" alt="CandyCrush" />
+      </div>
+      <div class="col">
+        <div class="project-description">
+          <h3 class="mb-5"> </h3>
+          <p class="mb-5 text-muted">
+            To practice React Front end framework working I went a head and created a Browser version of the Candy Crush
+            Game inspired game that allows users to score every time they match a kind of candy horizontally or
+            vertically by dragging and dropping candy's vertically or horizontally to form a row/ column or 3's/4's or
+            5's of a kind! </p>
+          <a href="https://dionnenoellabarretto.github.io/CandyCrushGame/" class="btn btn-branding-outline">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col d-none d-lg-block">
+        <img src="./images/ReactPortfolio.png" class="img-fluid" alt="React Portfolio" />
+      </div>
+      <div class="col">
+        <div class="project-description">
+          <h3 class="mb-5"> </h3>
+          <p class="mb-5 text-muted text_right">AS AN employer looking for candidates with experience building single-page applications
+            <br>I WANT to view a potential employee's deployed React portfolio of work samples
+            <br> SO THAT I can assess whether they're a good candidate for an open position
+          </p>
+          <a href="https://dionnenoellabarretto.github.io/" class="btn btn-branding-outline">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col d-none d-lg-block">
+        <img src="" class="img-fluid" alt="" />
+      </div>
+      <div class="col">
+        <div class="project-description">
+          <h3 class="mb-5"> </h3>
+          <p class="mb-5 text-muted">
+          </p>
+          <a href="" class="btn btn-branding-outline">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <footer>
+    <div class="contact-box justify-content-center mb-5 d-none d-md-flex">
+      <div>
+        <div>
+          <a href="https://getcloud.withgoogle.com/schedule/dionnenoella?ln=en" class="btn btn-branding mt-3"
+            title="Contact DNB">
+            Contact me
+          </a>
+        </div>
+        <p class="text-muted">Let's work together</p>
+      </div>
+
+    </div>
+    <div id="contact" class="d-flex justify-content-center mb-4">
+      <a href="mailto:denverdionne@gmail.com" class="email-link" title="Email Dionne Noella Barretto">
+        denverdionne@gmail.com
+      </a>
+    </div>
+    <div class="icons-social d-flex justify-content-center mb-2">
+      <a target="_blank" href="https://github.com/dionnenoellabarretto"><i class="fab fa-github"></i></a>
+      <a target="_blank" href="https://dev.to/dionnenoellabarretto"><i class="fab fa-dev"></i></a>
+      <a target="_blank" href="https://stackoverflow.com/users/5882961/dionne-noella-barretto"><i
+          class="fab fa-stack-overflow"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/dionnenoellabarretto"><i class="fab fa-linkedin"></i></a>
+      <a target="_blank" href="https://medium.com/@denverdionne"><i class="fab fa-medium"></i></a>
+      <a target="_blank" href="https://www.freecodecamp.org/dionnenoellabarretto"><i
+          class="fab fa-free-code-camp"></i></a>
+      <a target="_blank" href="https://www.youtube.com/channel/UC3nwF9HcxNjvgrArnGewJ1w"><i
+          class="fab fa-youtube"></i></a>
+      <a target="_blank" href="https://codepen.io/denverdionne"><i class="fab fa-codepen"></i></a>
+    </div>
+    <hr>
+    <div class="icons-social d-flex justify-content-center mb-2">
+      <a target="_blank" href="https://dnb-shecodes-portfolio.netlify.app/"><img src="images/shecodes.png"
+          class="shecode logo d-none d-md-block" alt="SheCodes Logo" width="100%" height="700px" /></a>
+    </div>
+    <div class="icons-social d-flex justify-content-center mb-2">
+      <h4> &copy; ✌️ Copyright 2022 | Dionne Noella Barretto ✌️ </h4>
+    </div>
+  </footer>
+
 </body>
 <!-- bootstrap imported for functionality -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </html>
